@@ -1,0 +1,87 @@
+[
+    {
+      "id": "1",
+      "campName": "Heart Checkup Camp",
+      "image": "https://i.ibb.co/Kw6znGh/image.png",
+      "fees": 500,
+      "dateTime": "2025-05-10 10:00 AM",
+      "location": "City Hospital, Dhaka",
+      "healthcareProfessional": "Dr. Ayesha Rahman",
+      "description": "Attend our Cardiovascular Health Symposium and gain insights into maintaining a healthy heart. Explore a range of heart health talks delivered by leading cardiologists. Visit our risk assessment booths for personalized assessments and advice. Engage in discussions and workshops focusing on preventive measures and lifestyle changes for a healthier heart. Join us in this effort to prioritize cardiovascular well-being and lead a heart-healthy life.",
+      "participantCount": 35,
+      "targetAudience": "Adults concerned about heart health"
+    },
+    {
+      "id": "2",
+      "campName": "Diabetes Awareness Camp",
+      "image": "https://i.ibb.co/fpJ9Ps2/2.jpg",
+      "fees": 300,
+      "dateTime": "2025-05-15 9:00 AM",
+      "location": "Green Life Clinic, Chittagong",
+      "healthcareProfessional": "Dr. Shafayet Hossain",
+      "description": "Welcome to the Vision Care Campaign, where clarity meets compassion for those seeking enhanced vision care. Immerse yourself in complimentary eye examinations conducted by skilled professionals, aimed at ensuring optimal eye health. Benefit from the distribution of quality eyewear, empowering individuals with the gift of clearer sight and a brighter future. This campaign isn't just about vision; it's a dedication to providing access to essential eye care, fostering inclusivity and enabling individuals to experience the world with newfound clarity and confidence.",
+      "participantCount": 48,
+      "targetAudience": "Individuals in Need of Vision Care"
+    },
+    {
+      "id": "3",
+      "campName": "Eye Checkup Camp",
+      "image": "https://i.ibb.co/FsNFgKX/3.jpg",
+      "fees": 200,
+      "dateTime": "2025-05-12 11:00 AM",
+      "location": "Vision Care Center, Sylhet",
+      "healthcareProfessional": "Dr. Rumi Jahan",
+      "description": "Step into our Dental Care Clinic, a dedicated space celebrating the essence of optimal oral health for individuals of all ages. Embrace the opportunity to undergo comprehensive dental checkups, ensuring that your oral hygiene is impeccably maintained. Explore a treasure trove of invaluable tips and personalized guidance on sustaining healthy dental habits tailored to diverse age groups. Join us in celebrating radiant smiles and empowering individuals with the knowledge to preserve their dental well-being. This clinic isn't just about dental care; it's a commitment to nurturing healthy and confident smiles for everyone.",
+      "participantCount": 42,
+      "targetAudience": "All Age Groups"
+    },
+    {
+      "id": "4",
+      "campName": "Dental Care Camp",
+      "image": "https://i.ibb.co/FV0nTJb/4.jpg",
+      "fees": 250,
+      "dateTime": "2025-05-18 2:00 PM",
+      "location": "Smile Dental, Khulna",
+      "healthcareProfessional": "Dr. Rashed Karim",
+      "description": "Enter a compassionate space of mental wellness at our Mental Health Awareness Workshop, a sanctuary offering support, guidance, and understanding. Engage in thought-provoking discussions centered around stress management, resilience, and the intricate facets of mental health. Delve into counseling sessions facilitated by empathetic professionals, offering invaluable insights and support in navigating the complexities of mental well-being. This workshop isn't just an event; it's a safe haven fostering a culture of empathy, understanding, and acceptance towards holistic mental health.",
+      "participantCount": 27,
+      "targetAudience": "Public"
+    },
+    {
+      "id": "5",
+      "campName": "Child Vaccination Camp",
+      "image": "https://i.ibb.co/gy4Kjz2/5.jpg",
+      "fees": 0,
+      "dateTime": "2025-05-20 9:30 AM",
+      "location": "Pediatric Center, Rajshahi",
+      "healthcareProfessional": "Dr. Tania Islam",
+      "description": "Uncover the intricate dynamics of cardiovascular health at our exhaustive Cardiovascular Health Symposium. This comprehensive event invites you to embrace a deeper understanding of your heart's vitality. Engage in thorough heart screenings meticulously designed to assess and enhance your cardiac well-being, guided by leading medical professionals. Immerse yourself in engaging cardiac workshops, where experts impart invaluable knowledge and tools essential for nurturing a robust cardiac regimen. Join a passionate community dedicated to proactive heart health, exploring strategies to fortify your heart and lead a life brimming with vitality and vigor. This symposium isn't just about awareness; it's a collective commitment to heart wellness.",
+      "participantCount": 50,
+      "targetAudience": "Cardiac Patients"
+    },
+    {
+      "id": "6",
+      "campName": "Orthopedic Consultation Camp",
+      "image": "https://i.ibb.co/NrLmfvX/6.jpg",
+      "fees": 600,
+      "dateTime": "2025-05-22 1:00 PM",
+      "location": "Bone & Joint Clinic, Barisal",
+      "healthcareProfessional": "Dr. Nahid Mahmud",
+      "description": "Join us at the Pediatric Health Fair, an inclusive and vibrant event designed to prioritize the well-being of your beloved children. Immerse yourself in a diverse array of pediatric consultations led by dedicated experts, offering comprehensive care and guidance for your little ones. Visit the immunization clinic, ensuring that your child receives essential vaccinations critical for their growth and health. Engage in interactive activities promoting child health education, fostering an environment that nurtures growth, happiness, and vitality for our future generation. This fair is not just an event but a community-driven initiative to safeguard the health and happiness of our children.",
+      "participantCount": 20,
+      "targetAudience": "Children and Families"
+    },
+    {
+      "id": "7",
+      "campName": "Skin & Dermatology Camp",
+      "image": "https://i.ibb.co/Kw6znGh/image.png",
+      "fees": 400,
+      "dateTime": "2025-05-25 10:00 AM",
+      "location": "Dermacare Hospital, Comilla",
+      "healthcareProfessional": "Dr. Sabrina Ahmed",
+      "description": "Welcome to the Health & Wellness Expo, a transformative event meticulously curated to elevate your overall well-being. This immersive gathering invites you to embark on a journey focused on holistic health, encompassing the harmonious balance of body, mind, and spirit. Engage in a multitude of health screenings meticulously designed to provide a comprehensive understanding of your physical health, guiding you towards proactive wellness practices. Immerse yourself in invigorating fitness workshops, led by experienced professionals who aim to empower you with exercises and techniques tailored to various fitness levels. Explore personalized nutrition consultations, guiding you towards dietary choices that resonate with your body's unique needs. Connect with renowned experts, forge new paths to wellness, and join a thriving community committed to fostering sustainable health practices.",
+      "participantCount": 31,
+      "targetAudience": "General Public"
+    }
+  ]
+  
