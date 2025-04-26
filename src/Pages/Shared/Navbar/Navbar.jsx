@@ -1,13 +1,15 @@
 import { Link, NavLink } from "react-router-dom";
+import imglogo from '../../../assets/logo.png'
 
 const Navbar = () => {
     return (
-        <nav className="flex items-center justify-between bg-[#FBFBFB] py-3 shadow-md px-5">
+        <div className="fixed z-10 bg-white/80 w-full">
+            <nav className="flex items-center justify-between  py-3 shadow-md px-5">
             {/* Logo Section */}
             <div className="flex items-center">
                 <Link to="/" className="flex items-center">
                     <img
-                        src="your-logo-url-here" 
+                        src={imglogo}
                         alt="Logo"
                         className="w-24 md:w-36"
                     />
@@ -46,6 +48,7 @@ const Navbar = () => {
                 </Link>
             </div>
         </nav>
+        </div>
     );
 };
 
