@@ -8,17 +8,16 @@ import Testimonials from "../Testimonials/Testimonials";
 const Home = () => {
   return (
     <>
-    <Helmet>
+      <Helmet>
         <title>Medicare | Home</title>
       </Helmet>
-        <div className="max-w-screen-xl mx-auto">
-      
-      <Banner></Banner>
-      <PopularCamps></PopularCamps>
-      <Testimonials></Testimonials>
-      <Faq></Faq>
-      <NewsLetter></NewsLetter>
-    </div>
+      <div className="max-w-screen-xl mx-auto">
+        <Banner></Banner>
+        <PopularCamps></PopularCamps>
+        <Testimonials></Testimonials>
+        <Faq></Faq>
+        <NewsLetter></NewsLetter>
+      </div>
     </>
   );
 };

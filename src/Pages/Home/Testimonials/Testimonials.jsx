@@ -9,7 +9,7 @@ const Testimonials = () => {
     const fetchReviews = async () => {
       setLoading(true);
       try {
-        const response = await fetch("/reviews.json");
+        const response = await fetch("http://localhost:5000/reviews");
         const data = await response.json();
         setReviews(data);
       } catch (error) {
