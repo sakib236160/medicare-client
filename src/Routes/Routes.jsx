@@ -5,6 +5,7 @@ import Main from "../Layout/Main";
 import Home from "../Pages/Home/Home/Home";
 import Contact from "../Pages/Contact/Contact";
 import AvailableCamps from "../Pages/AvailableCamps/AvailableCamps";
+import Login from "../Pages/Login/Login";
 
 
 
@@ -24,6 +25,10 @@ import AvailableCamps from "../Pages/AvailableCamps/AvailableCamps";
         {
           path:"/available-camps",
           element:<AvailableCamps></AvailableCamps>
+        },
+        {
+          path:"/login",
+          element:<Login></Login>
         }
       ]
     },
