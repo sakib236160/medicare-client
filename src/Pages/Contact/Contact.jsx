@@ -1,5 +1,6 @@
 import "leaflet/dist/leaflet.css";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 // import { Helmet } from "react-helmet-async";
 import toast from "react-hot-toast";
 import { MapContainer, TileLayer } from "react-leaflet";
@@ -19,9 +20,9 @@ const Contact = () => {
     }, []);
     return (
         <section className="text-gray-600 body-font relative">
-            {/* <Helmet>
+            <Helmet>
                 <title>MediCare | Contact Us</title>
-            </Helmet> */}
+            </Helmet>
             <div className="container px-5 py-24 mx-auto flex gap-5 sm:flex-nowrap flex-wrap">
                 <div className="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden">
                     <MapContainer

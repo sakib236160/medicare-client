@@ -7,12 +7,16 @@ import {
 } from "react-router-dom";
 import { router } from './Routes/Routes';
 import { Toaster } from 'react-hot-toast';
+import {HelmetProvider } from 'react-helmet-async';
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <HelmetProvider>
     <div className=''>
     <Toaster />
     <RouterProvider router={router} />
     </div>
+    </HelmetProvider>
   </StrictMode>,
 )

@@ -4,6 +4,7 @@ import {
 import Main from "../Layout/Main";
 import Home from "../Pages/Home/Home/Home";
 import Contact from "../Pages/Contact/Contact";
+import AvailableCamps from "../Pages/AvailableCamps/AvailableCamps";
 
 
 
@@ -19,6 +20,10 @@ import Contact from "../Pages/Contact/Contact";
         {
           path:"/contact-us",
           element:<Contact></Contact>
+        },
+        {
+          path:"/available-camps",
+          element:<AvailableCamps></AvailableCamps>
         }
       ]
     },
