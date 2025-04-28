@@ -7,6 +7,7 @@ import Contact from "../Pages/Contact/Contact";
 import AvailableCamps from "../Pages/AvailableCamps/AvailableCamps";
 import Login from "../Pages/Login/Login";
 import SignUp from "../Pages/SignUp/SignUp";
+import PrivateRoute from "./PrivateRoute";
 
 
 
@@ -25,7 +26,7 @@ import SignUp from "../Pages/SignUp/SignUp";
         },
         {
           path:"/available-camps",
-          element:<AvailableCamps></AvailableCamps>
+          element:<PrivateRoute><AvailableCamps></AvailableCamps></PrivateRoute>
         },
         {
           path:"/login",

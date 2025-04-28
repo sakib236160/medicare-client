@@ -4,9 +4,14 @@ import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 import { Helmet } from "react-helmet-async";
 import Swal from "sweetalert2";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Login = () => {
     const {signIn} = useContext(AuthContext);
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    const from = location.state?.from?.pathname || "/";
 
     const handleLogin = event => {
         event.preventDefault();
@@ -26,7 +31,12 @@ const Login = () => {
                     text: 'Welcome to Medicare!',
                     confirmButtonColor: '#3085d6',
                     confirmButtonText: 'Ok!'
+                })
+
+                .then(() => {
+                    navigate(from, { replace: true });
                 });
+
             })
             .catch(error => {
                 console.error(error);
@@ -35,6 +45,7 @@ const Login = () => {
                     title: 'Oops...',
                     text: error.message,
                 });
+                // navigate(from, { replace: true });
             });
     };
 
