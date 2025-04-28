@@ -18,7 +18,11 @@ const Login = () => {
         })
     }
     return (
-        <div className="flex min-h-screen bg-base-200">
+        <>
+         <Helmet>
+        <title>Medicare | Login</title>
+      </Helmet>
+            <div className="flex min-h-screen bg-base-200">
             {/* Left Side Animation */}
             <div className="hidden lg:flex flex-1 items-center justify-center">
                 <div className="max-w-md">
@@ -75,6 +79,7 @@ const Login = () => {
                 </form>
             </div>
         </div>
+        </>
     );
 };
 

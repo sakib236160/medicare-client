@@ -1,17 +1,29 @@
 import Lottie from "lottie-react";
 import loginAnimation from "../../assets/animation/login.json";
 import { useForm } from "react-hook-form";
+import { Helmet } from "react-helmet-async";
+import { useContext } from "react";
+import { AuthContext } from "../../providers/AuthProvider";
 
 const SignUp = () => {
 
     const {register,handleSubmit,formState: { errors }} = useForm();
-
+    const {createuser} = useContext(AuthContext)
     const onSubmit = data => {
         console.log(data)
+        createuser(data.email, data.password)
+        .then(result=>{
+            const loggedUser = result.user;
+            console.log(loggedUser);
+        })
     };
 
     return (
-        <div className="flex min-h-screen bg-base-200">
+        <>
+         <Helmet>
+                <title>Medicare | SignUp</title>
+              </Helmet>
+            <div className="flex min-h-screen bg-base-200">
             {/* Left Side Animation */}
             <div className="hidden lg:flex flex-1 items-center justify-center">
                 <div className="max-w-md">
@@ -63,18 +75,27 @@ const SignUp = () => {
                         </label>
                         <input
                             id="password"
-                            {...register("password",{ required: true,minLength:6, maxLength: 20 })}
+                            {...register("password",{ 
+                                required: true,
+                                minLength:6, 
+                                maxLength: 20 ,
+                                pattern:/(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]/
+
+                            })}
                             name="password"
                             type="password"
                             placeholder="Enter your password"
                             className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
                         />
-                        {errors.password?.type === 'required' && <p className="text-red-600">Password is Required</p>}
+                        {errors.password?.type === 'required' && <p className="text-red-600">Password is required</p>}
+                        {errors.password?.type === 'minLength' && <p className="text-red-600">Password must be 6 characters</p>}
+                        {errors.password?.type === 'maxLength' && <p className="text-red-600">Password must be Less then 20 characters</p>}
+                        {errors.password?.type === 'pattern' && <p className="text-red-600">Password must be at least 6 characters long and include at least one uppercase letter, one lowercase letter, one number, and one special character.</p>}
                     </div>
 
                     {/* Login Button */}
                     <button className="w-full bg-primary text-white font-bold py-3 rounded-md hover:bg-primary/90 transition">
-                        Login
+                    Sign up
                     </button>
 
                     {/* Sign Up Link */}
@@ -87,6 +108,7 @@ const SignUp = () => {
                 </form>
             </div>
         </div>
+        </>
     );
 };
 
